@@ -134,9 +134,8 @@ public class CommandBox extends UiPart<Region> {
             String text = inputArray[i];
 
             //Command Keyword
-            if (validCommandKeyword(text)) {
-                index = allTextInput.indexOf(text);
-                configActiveKeyword(index, text);
+            if (i == 0 && validCommandKeyword(text)) {
+                configActiveKeyword(text);
             }
 
             //Name
@@ -217,15 +216,12 @@ public class CommandBox extends UiPart<Region> {
      * Configure command keyword when appeared on Command Box
      * @param commandKeyword
      */
-    private void configActiveKeyword(int index, String commandKeyword) {
-        String allTextInput = commandTextField.getText();
-        String inputText = allTextInput.substring(0, index);
-        double margin = computeMargin(inputText);
+    private void configActiveKeyword(String commandKeyword) {
         keywordLabel.setId("keywordLabel");
         keywordLabel.setText(commandKeyword);
         keywordLabel.setVisible(true);
         keywordLabel.getStyleClass().add("keyword-label");
-        Insets leftInset = new Insets(0, 0, 0, margin + 13);
+        Insets leftInset = new Insets(0, 0, 0, 13);
         stackPane.setAlignment(keywordLabel, Pos.CENTER_LEFT);
         stackPane.setMargin(keywordLabel, leftInset);
 
