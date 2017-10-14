@@ -225,8 +225,8 @@ public class CommandBox extends UiPart<Region> {
 
     /**
      * Check if keyword is a valid command keyword
-     * @param keyWord
-     * @return
+     * @param keyWord text from command box
+     * @return true is can be found in the command keyword list
      */
     private boolean validCommandKeyword(String keyWord) {
         if (keywordColorMap.containsKey(keyWord)) {
@@ -249,7 +249,7 @@ public class CommandBox extends UiPart<Region> {
 
     /**
      * Configure command keyword when appeared on Command Box
-     * @param commandKeyword
+     * @param commandKeyword  found in the command keyword list
      */
     private void configActiveKeyword(String commandKeyword) {
         keywordLabel.setId("keywordLabel");
@@ -375,7 +375,7 @@ public class CommandBox extends UiPart<Region> {
      * This method compute the margin for label
      * @param index the type of font size used in command box
      * @param str the text used to compute the width
-     * @return
+     * @return the margin of text in the command box
      */
     private double computeMargin(int index, String str) {
         Text text = new Text(str);
