@@ -129,7 +129,7 @@ public class MainWindow extends UiPart<Region> {
      * Fills up all the placeholders of this window.
      */
     void fillInnerParts() {
-        timetable = new Timetable();
+        timetable = new Timetable(logic);
         timetablePlaceholder.getChildren().add(timetable.getRoot());
 
         lessonListPanel = new LessonListPanel(logic.getFilteredLessonList());
