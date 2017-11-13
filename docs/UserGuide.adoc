@@ -646,13 +646,32 @@ ModU will clear all modules in the timetable.
 image::tutorial/clear.png[width="790"]
 
 == FAQ
+*Q*: What is ModU? +
+*A*: ModU is a timetable scheduling software for professors and administrators in tertiary institutions. +
+
+*Q*: What does the name “ModU” mean? +
+*A*: We came to the conclusion of ModU as it is a module planner for university lecturers. The “Mod” in ModU refers to module and “U” refers to university as well as “you” being in control of planning your schedule. +
 
 *Q*: How do I transfer my data to another Computer? +
-*A*: Install the app in the computer that you want to transfer the data to and overwrite the empty data file
-it creates with the file that contains the data in your ModU folder stored in the previous computer.
+*A*: Install the app in the computer that you want to transfer the data to and overwrite the empty data file it creates with the file that contains the data in your ModU folder stored in the previous computer. +
+
+*Q*: What are the platforms that are currently supported? +
+*A*: ModU supports all mainstream operating system such as Windows, Mac OS and Linux. +
+
+*Q*: Where can I see a list of available commands? +
+*A*: You can refer to the command summary at section 6 or you can type help in the command box which will display the user guide along with a list of available commands. +
+
+*Q*: How do I know if there are overlapping classes at the same time? +
+*A*: ModU will display a red background on the particular lesson in the timetable panel. +
+
+*Q*: Can I add additional information about a particular module? +
+*A*: You can use the remark command to supplement any additional information about the module. +
 
 *Q*: How do I get support? +
-*A*: if you have any questions, you can contact us by mailto:liangcao@yahoo.com[email].
+*A*: If you have any questions, you can contact us by mailto:liangcao@yahoo.com[email]. +
+
+*Q*: How do I give feedback? +
+*A*: You can send your suggestions and feedback to us by mailto:modUFeedBack@nus.edu.sg.[email] +
 
 == Command Summary
 
